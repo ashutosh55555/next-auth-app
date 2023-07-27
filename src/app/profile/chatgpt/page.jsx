@@ -13,6 +13,7 @@ const imageStyle = {
 
 
 const ChatGPTConversation = () => {
+  console.log(process.env.NEXT_PUBLIC_OPENAI_API_KEY,"process.env.OPENAI_API_KEY")
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState('');
   const [url,setUrl]=useState('')
@@ -24,7 +25,7 @@ const ChatGPTConversation = () => {
   };
 
   const configuration = new Configuration({
-            apiKey: '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'
+            apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY
         });
         const openai = new OpenAIApi(configuration);
     
