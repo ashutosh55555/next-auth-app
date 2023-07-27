@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.auth-container{
+  background-color: black;
+  color:white;
+  padding:50px
+
+}
+
+
+.auth-container .form-card {
+  padding: 50px;
+  min-height: 60vh;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column; /* Setting the flex direction to column */
+  align-items: center; /* Centering items along the cross-axis (vertically) */
+}
+
+/* Example styling for input elements inside .form-card */
+.auth-container .form-card input[type="text"],
+.auth-container .form-card input[type="password"] {
+  /* Add any additional styles you want for the input elements here */
+  width: 100%; /* Example: Make the inputs take up the full width of the container */
+  margin-bottom: 10px; /* Example: Add some spacing between inputs */
+  padding: 8px; /* Example: Add padding to make inputs look nicer */
+}
+
+.title
+  {
+    font-size: 26px; /* Example font size, adjust as needed */
+    font-weight: bold; /* Example font weight, adjust as needed */
+    color: white; /* Example text color, adjust as needed */
+    font-family: "Arial", sans-serif; /* Example font family, adjust as needed */
+    text-align: center; /* Example text alignment, adjust as needed */
+    text-transform: uppercase; /* Example text transformation, adjust as needed */
+    /* Add any additional styles you want for the h1 title here */
+    /* Example additional styles: text-shadow, letter-spacing, line-height, etc. */
+  }
+  .container-fluid {
+    margin-top: 15px;
+}
+.payment-container{
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100%;
+  padding: 50px;
+  border-radius: 200px;
+
+
+}
+
+.container-card-form{
+  background: rgb(252, 252, 252);
+  padding: 40px;
+}
+.title1{
+  font-size: 26px; /* Example font size, adjust as needed */
+  padding-bottom: 50px;
+  font-weight: bold; /* Example font weight, adjust as needed */
+  color: rgb(0, 0, 0); /* Example text color, adjust as needed */
+  font-family: "Arial", sans-serif; /* Example font family, adjust as needed */
+  text-align: center; /* Example text alignment, adjust as needed */
+  text-transform: uppercase; /* Example text transformation, adjust as needed */
+  /* Add any additional styles you want for the h1 title here */
+  /* Example additional styles: text-shadow, letter-spacing, line-height, etc. */
+
+}
+
+
+
+
+/* Style the form labels */
+.form-group label {
+  font-weight: bold;
+}
+
+/* Style the form input fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style the submit and clear buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #06bd43;
+}
+
+.btn-info {
+  background-color: #b81717;
+}
+
+/* Align the buttons to the right */
+.text-right {
+  text-align: right;
+}
+
+/* Add some spacing between form elements */
+.row-fluid {
+  margin-bottom: 15px;
+}
+
+.bacground-img{
+  background-image: url('../../public/Virtual\ Credit\ Cards\ How\ They\ Work\,\ Benefits\,\ and\ Disadvantages.png');
+  /* Adjust the background size as needed (cover, contain, etc.) */
+  background-size: cover;
+  /* Set the background position (center, top, bottom, left, right, etc.) */
+  background-position: center;
+  /* Set the background repeat (no-repeat, repeat-x, repeat-y, repeat) */
+  background-repeat: no-repeat;
+  min-height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.payment-container-listing{
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+/* TABLE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--darkblue);
+  border-radius: 40px;
+}
+
+.table-wrapper::::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 40px;
+}
+
+.table-wrapper table {
+  margin: 50px 0 20px;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  min-width: 75px;
+}
+
+.table-wrapper table th {
+  color: var(--white);
+  background: var(--darkblue);
+}
+
+.table-wrapper table tbody tr:nth-of-type(even) > * {
+  background: var(--lightblue);
+}
+
+.table-wrapper table td:first-child {
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-gap: 10px;
+  text-align: left;
+}
+
+.table-credits {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ChatGPT */
+
+.chat-container {
+  width: 1000px;
+  min-height: 60vh;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color:rgb(129, 221, 167) ;
+}
+
+.chat-messages {
+  padding: 16px;
+  min-height: 60vh;
+  max-height: auto;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+
+.user {
+  background-color: #f0f0f0;
+  text-align: right;
+}
+
+.ai {
+  background-color: #e0e0e0;
+  text-align: left;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #f0f0f0;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.chat-input button {
+  margin-left: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
